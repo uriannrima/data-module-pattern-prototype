@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div
+        data-module="todos"
+        data-text='"Initial Value"'
+        data-todos='[
+        {
+          "id":2,
+          "text":"This will merge.",
+          "done": true
+        }
+      ]'
+      >
+        <div>
+          <form data-form>
+            <input type="text" required minlength="5" />
+            <button>Add</button>
+          </form>
+        </div>
+
+        <div data-module="statusFilter" data-options='["Done"]'>
+          <label for="status">Status</label>
+          <select name="status" id="status">
+            <option value="All">All</option>
+          </select>
+        </div>
+
+        <div>
+          <ul data-todos>
+            <li
+              data-module="todo"
+              data-id="0"
+              data-done="true"
+              data-text='"Do it"'
+            ></li>
+            <li
+              data-module="todo"
+              data-id="1"
+              data-done="false"
+              data-text='"Remember to do it"'
+            ></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.ts"></script>
+  </body>
+</html>

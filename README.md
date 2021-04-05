@@ -1,2 +1,2 @@
-# data-module-pattern-prototype2
+# data-module-pattern-prototype
 Created with CodeSandbox

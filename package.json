@@ -1,7 +1,7 @@
 {
-  "name": "data-module-pattern-project",
+  "name": "data-module-pattern-prototype",
   "version": "1.0.0",
-  "description": "",
+  "description": "Small project to try to use data-* attributes to bind raw HTML with Javascript to create dynamic behaviour.",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
@@ -16,5 +16,8 @@
   "resolutions": {
     "@babel/preset-env": "7.13.8"
   },
-  "keywords": []
+  "keywords": [
+    "data-attribute",
+    "typescript"
+  ]
 }
